@@ -1,0 +1,107 @@
+<!doctype html>
+<html class="index" lang="en" ng-app="app">
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta charset="utf-8">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<base href="/">
+		<title cp-hidden="{{pageTitle}}">{{pageTitle | translate}}</title>
+		<!-- bower:css -->
+		<link rel="stylesheet" href="dist/vendor-css/bootstrap.min.css">
+		<link rel="stylesheet" href="dist/vendor-css/bootstrap-theme.min.css">
+		<link rel="stylesheet" href="dist/vendor-css/font-awesome.min.css">
+		<!-- endinject -->
+		<!-- app:css -->
+		<link rel="stylesheet" href="dist/css/main-ac700bd320.css">
+		<link rel="stylesheet" href="dist/css/print-6842c2fd82.css">
+		<!-- endinject -->
+		<link rel="stylesheet" type="text/css" translate-href="td.resources.theme" interpolate="dist/css/themes/{{'{' + '{key}' + '}'}}.css" cp-values="chevrolet,buick,military,gmc,chevy-opg,chevy-black-opg,gm-opg,buick-d2d,gmc-d2d">
+		<link rel="shortcut icon" href="favicon.ico?v=2.0">
+	</head>
+	<body ng-cloak translate-cloak class="align-pad">
+		<div class="container">
+			<div ui-view class="main-cont-ani" autoscroll="true"></div>
+		</div>
+		
+		
+		<div id="loading-back" class="{{ {true: 'active'}[loadingService.count > 0] }}">
+			<div id="loading-ico"></div>
+		</div>
+		
+		<div data-control-panel></div>
+		<script>
+			/** debug:js */
+			window.ngDebugEnabled = true;
+			/** endinject */
+		</script>
+		<!-- bower:js -->
+
+		<script src="dist/vendor-js/jquery.min.js"></script>
+
+		<script src="dist/vendor-js/jquery.maskedinput.js"></script>
+
+		<script src="dist/vendor-js/angular.min.js"></script>
+
+		<script src="dist/vendor-js/angular-sanitize.min.js"></script>
+
+		<script src="dist/vendor-js/angular-resource.min.js"></script>
+
+		<script src="dist/vendor-js/angular-animate.min.js"></script>
+
+		<script src="dist/vendor-js/angular-messages.min.js"></script>
+
+		<script src="dist/vendor-js/angular-mocks.js"></script>
+
+		<script src="dist/vendor-js/angular-cookies.min.js"></script>
+
+		<script src="dist/vendor-js/angular-ui-router.min.js"></script>
+
+		<script src="dist/vendor-js/bootstrap.min.js"></script>
+
+		<script src="dist/vendor-js/ui-bootstrap.js"></script>
+
+		<script src="dist/vendor-js/ui-bootstrap-tpls.js"></script>
+
+		<script src="dist/vendor-js/angular-translate.min.js"></script>
+
+		<script src="dist/vendor-js/angular-translate-storage-local.min.js"></script>
+
+		<script src="dist/vendor-js/angular-translate-loader-partial.min.js"></script>
+
+		<script src="dist/vendor-js/angulartics.min.js"></script>
+
+		<script src="dist/vendor-js/angulartics-ga.min.js"></script>
+
+		<script src="dist/vendor-js/moment.min.js"></script>
+
+		<script src="dist/vendor-js/mask.min.js"></script>
+
+		<script src="dist/vendor-js/ua-parser.min.js"></script>
+
+		<!-- endinject -->
+		<!-- app:js -->
+
+		<script src="app/js/core/core.module.js"></script>
+
+		<script src="app/js/std/std.module.js"></script>
+
+		<script src="app/js/ga.js"></script>
+
+		<script src="app/js/core/services/init.service.js"></script>
+
+		<script src="app/js/core/services/lang.service.js"></script>
+
+		<script src="app/js/core/services/loading.service.js"></script>
+
+		<script src="app/js/core/services/storage.service.js"></script>
+
+		<script src="app/js/core/controllers/error.ctrl.js"></script>
+
+		<script src="app/js/core/controllers/init.ctrl.js"></script>
+
+		<!-- endinject -->
+		<!-- wurfl device detection -->
+		<script type="text/javascript" src="//wurfl.io/wurfl.js"></script>
+	</body>
+</html>
